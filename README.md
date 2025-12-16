@@ -57,4 +57,4 @@ This website is designed to be deployed on Vercel.
 
 ## License
 
-© 2024 Anopa Nsroroma Recruitment Agency Limited. All rights reserved.
+© 2025 Anopa Nsroroma Recruitment Agency Limited. All rights reserved.
