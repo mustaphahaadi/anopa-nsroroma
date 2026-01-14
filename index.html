@@ -1,280 +1,373 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Anopa Nsroroma Recruitment Agency Limited</title>
-  <meta name="description" content="Anopa Nsroroma Recruitment Agency Limited is a recruitment agency in Juaboso, Western North region of Ghana. We connect talented individuals with top companies across industries." />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="./styles.css" />
+  <link rel="stylesheet" href="anopa-style.css">
+  <!--
+
+
+
+-->
 </head>
+
 <body>
-  <a class="skip" href="#main">Skip to content</a>
-
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="./index.html" aria-label="Anopa Nsroroma Recruitment Agency Limited">
-        <img class="brand-logo" src="./anopa-logo.png" alt="Anopa Nsroroma" />
-        <span class="brand-text">NOPA NSROROMA LTD</span>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="#home" class="logo">
+        <img src="images/anopa-logo.png" alt="Anopa Nsroroma" class="logo-image">
+        <!-- <span>Anopa Nsroroma</span> -->
       </a>
-
-      <nav class="nav" aria-label="Primary">
-        <a class="nav-link is-active" href="#home">Home</a>
-      </nav>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Why Choose Us</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#team">Team</a></li>
+        <li><a href="#sectors">Services</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="mobile-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </div>
-  </header>
+  </nav>
 
-  <main id="main">
-    <section class="hero" id="home">
-      <div class="container">
-        <div class="hero-center">
-          <h1>Welcome to Anopa Nsroroma Recruitment Agency Limited</h1>
-          <p class="lead">Connecting talent, empowering careers.</p>
-          <a class="button button-primary" href="#about">About us</a>
-        </div>
-      </div>
-    </section>
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="geometric-shapes">
+      <div class="geo-shape"></div>
+      <div class="geo-shape"></div>
+      <div class="geo-shape"></div>
+      <div class="geo-shape"></div>
+      <div class="geo-shape"></div>
+    </div>
+    <div class="hero-content">
+      <h1 id="hero-headline">Welcome to Anopa Nsroroma Recruitment Agency Limited</h1>
+      <p id="hero-paragraph">Connecting talent, empowering careers.</p>
+      <a href="#about" class="cta-button">About us</a>
+    </div>
+  </section>
 
-    <section class="section" id="banner" aria-label="Banner image">
-      <div class="container">
-        <div class="banner">
-          <img class="banner-image" src="./assests/image1.png" alt="" aria-hidden="true" />
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="about">
-      <div class="container">
-        <div class="section-head centered">
-          <div class="asterisk" aria-hidden="true">*</div>
-          <h2>About Us</h2>
-        </div>
-
-        <div class="narrow">
-          <p>Anopa Nsroroma Recruitment Agency Limited is a leading recruitment agency based in Juaboso, Western North region of Ghana. We specialize in connecting talented individuals with top companies in various industries.</p>
-          <p>Our dedicated team ensures a seamless and efficient recruitment process for both employers and job seekers, with a personalized approach that focuses on the right fit.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="insights">
-      <div class="container">
-        <div class="section-head centered">
-          <div class="asterisk" aria-hidden="true">*</div>
-          <h2>Why Choose Anopa Nsroroma</h2>
-        </div>
-        <div class="grid-3">
-          <article class="mini-card">
-            <div class="asterisk" aria-hidden="true">*</div>
+  <!-- Services Section (Why Choose Us) -->
+  <section id="services" class="services">
+    <div class="section services-container">
+      <h2 class="section-title fade-in">Why Choose Anopa Nsroroma</h2>
+      <div class="services-layout">
+        <div class="services-content">
+          <div class="service-details active" data-service="expert">
             <h3>Expert Recruitment</h3>
-            <p>Our experienced team specializes in finding the perfect match between employers and qualified candidates across various industries.</p>
-          </article>
-          <article class="mini-card">
-            <div class="asterisk" aria-hidden="true">*</div>
+            <div class="service-subtitle">Perfect Match</div>
+            <p>Our experienced team specializes in finding the perfect match between employers and qualified
+              candidates across various industries.</p>
+          </div>
+          <div class="service-details" data-service="international">
             <h3>International Opportunities</h3>
-            <p>We connect talented individuals with educational and work opportunities abroad, providing visa support and guidance for international placements.</p>
-          </article>
-          <article class="mini-card">
-            <div class="asterisk" aria-hidden="true">*</div>
+            <div class="service-subtitle">Work & Education Abroad</div>
+            <p>We connect talented individuals with educational and work opportunities abroad, providing
+              visa support and guidance for international placements.</p>
+          </div>
+          <div class="service-details" data-service="career">
             <h3>Career Development</h3>
-            <p>From resume building to interview preparation, we provide comprehensive support to help job seekers succeed in their career journey.</p>
-          </article>
-          <article class="mini-card">
-            <div class="asterisk" aria-hidden="true">*</div>
+            <div class="service-subtitle">Support System</div>
+            <p>From resume building to interview preparation, we provide comprehensive support to help job
+              seekers succeed in their career journey.</p>
+          </div>
+          <div class="service-details" data-service="staffing">
             <h3>Staffing Solutions</h3>
-            <p>Flexible permanent, temporary, and contract staffing solutions tailored to meet your organization's specific needs and timelines.</p>
-          </article>
-          <article class="mini-card">
-            <div class="asterisk" aria-hidden="true">*</div>
+            <div class="service-subtitle">Flexible Options</div>
+            <p>Flexible permanent, temporary, and contract staffing solutions tailored to meet your
+              organization's specific needs and timelines.</p>
+          </div>
+          <div class="service-details" data-service="executive">
             <h3>Executive Search</h3>
-            <p>Specialized recruitment for senior-level positions, ensuring your leadership team gets the talent needed to drive success.</p>
-          </article>
-          <article class="mini-card">
-            <div class="asterisk" aria-hidden="true">*</div>
+            <div class="service-subtitle">Leadership Talent</div>
+            <p>Specialized recruitment for senior-level positions, ensuring your leadership team gets the
+              talent needed to drive success.</p>
+          </div>
+          <div class="service-details" data-service="local">
             <h3>Local Expertise</h3>
-            <p>Based in Juaboso, Western North region of Ghana, we understand the local market and have extensive networks across the country.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section alt" id="mission">
-      <div class="container">
-        <div class="section-head centered">
-          <div class="asterisk" aria-hidden="true">*</div>
-          <h2>Our Mission</h2>
-        </div>
-
-        <div class="narrow">
-          <p>To address the evolving needs of employers and job seekers by delivering reliable recruitment support and connecting the right talent with the right opportunities.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="solutions">
-      <div class="container">
-        <div class="section-head">
-          <h2>Comprehensive Recruitment Solutions</h2>
-          <p>Connecting talent with opportunity across Ghana and international markets</p>
-        </div>
-
-        <div class="split media-split">
-          <div>
-            <p>Anopa Nsroroma Recruitment Agency Limited is your trusted partner for all recruitment needs in Juaboso, Western North region of Ghana and beyond.</p>
-            <p>We specialize in staffing solutions, executive search, career counseling, and facilitating international educational and work opportunities with comprehensive visa support.</p>
-          </div>
-          <div class="media-card" aria-hidden="true">
-            <img class="section-image" src="./assests/image2.png" alt="" />
+            <div class="service-subtitle">Juaboso & Beyond</div>
+            <p>Based in Juaboso, Western North region of Ghana, we understand the local market and have
+              extensive networks across the country.</p>
           </div>
         </div>
-      </div>
-    </section>
-
-    <section class="section alt" id="sectors">
-      <div class="container">
-        <div class="split media-split">
-          <div class="media-card" aria-hidden="true">
-            <img class="section-image" src="./assests/image3.jpeg" alt="" />
+        <div class="services-tabs">
+          <div class="service-tab active" data-target="expert">
+            <div class="tab-icon">🎯</div>
+            <div class="tab-content">
+              <h4>Expert Recruitment</h4>
+              <p>Finding the perfect match across industries</p>
+            </div>
           </div>
-          <div>
-            <div class="section-head">
-              <div class="asterisk" aria-hidden="true">*</div>
-              <h2>Our Recruitment Services</h2>
+          <div class="service-tab" data-target="international">
+            <div class="tab-icon">✈️</div>
+            <div class="tab-content">
+              <h4>International Opportunities</h4>
+              <p>Global education and work placements</p>
             </div>
-
-            <ul class="checklist">
-              <li>Staffing Solutions (Permanent, Temporary & Contract)</li>
-              <li>Executive Search & Talent Management</li>
-              <li>Career Counseling & Resume Services</li>
-              <li>Interview Preparation & Training</li>
-              <li>International Opportunities (Education & Work Abroad)</li>
-              <li>Job Market Analysis & HR Consulting</li>
-              <li>Recruitment Process Outsourcing</li>
-            </ul>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="quote-band" id="quote" aria-label="Quote">
-      <div class="container">
-        <p class="quote-text">"I have been consistently impressed with the professionalism and efficiency of Anopa Nsroroma Recruitment Agency. They truly go above and beyond to find the perfect candidates for our company."</p>
-        <p class="quote-by">— Mary Mitchell</p>
-      </div>
-    </section>
-
-    <!-- <section class="section" id="testimonial">
-      <div class="container">
-        <div class="section-head centered">
-          <div class="asterisk" aria-hidden="true">*</div>
-          <h2>Client Testimonial</h2>
-        </div>
-        <div class="narrow">
-          <blockquote class="callout">
-            <p>"I have been consistently impressed with the professionalism and efficiency of Anopa Nsroroma Recruitment Agency. They truly go above and beyond to find the perfect candidates for our company."</p>
-            <footer>
-              <cite>— Mary Mitchell</cite>
-            </footer>
-          </blockquote>
-        </div>
-      </div>
-    </section> -->
-
-    <section class="section" id="contact">
-      <div class="container">
-        <div class="section-head">
-          <h2>Get in Touch</h2>
-        </div>
-
-        <div class="contact-block">
-          <div class="contact-grid">
-            <div class="contact-col">
-              <h3>Location</h3>
-              <p>Sefwi Juaboso, Western North Region, Ghana</p>
+          <div class="service-tab" data-target="career">
+            <div class="tab-icon">📈</div>
+            <div class="tab-content">
+              <h4>Career Development</h4>
+              <p>Resume building and interview prep</p>
             </div>
-            <div class="contact-col">
-              <h3>Phone</h3>
-              <ul>
-                <li><a href="tel:+2330544051414">+233 (0)544051414</a></li>
-                <li><a href="tel:+2330505968408">+233 (0)505968408</a></li>
-                <li><a href="tel:+2330249190429">+233 (0)249190429</a></li>
-                <li><a href="tel:+393512909637">+39 351 290 9637</a></li>
-              </ul>
+          </div>
+          <div class="service-tab" data-target="staffing">
+            <div class="tab-icon">🤝</div>
+            <div class="tab-content">
+              <h4>Staffing Solutions</h4>
+              <p>Permanent, temporary, and contract needs</p>
             </div>
-            <div class="contact-col">
-              <h3>Social Media</h3>
-              <ul>
-                <li><strong>TikTok:</strong> @anopa.nsroroma</li>
-                <li><strong>Facebook:</strong> Anopa Nsroroma</li>
-                <li><strong>Instagram:</strong> Anopa Nsroroma</li>
-              </ul>
+          </div>
+          <div class="service-tab" data-target="executive">
+            <div class="tab-icon">👔</div>
+            <div class="tab-content">
+              <h4>Executive Search</h4>
+              <p>Recruiting senior-level leadership</p>
             </div>
-            <div class="contact-col email-col">
-              <h3>Email</h3>
-              <ul>
-                <li><a href="mailto:anopansroromaagencyltd6@gmail.com">anopansroromaagencyltd6@gmail.com</a></li>
-                <li><a href="mailto:anopansroromarecruitmentagency@gmail.com">anopansroromarecruitmentagency@gmail.com</a></li>
-              </ul>
+          </div>
+          <div class="service-tab" data-target="local">
+            <div class="tab-icon">📍</div>
+            <div class="tab-content">
+              <h4>Local Expertise</h4>
+              <p>Deep understanding of the local market</p>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <div class="footer-brand">
-        <div class="brand-row">
-          <img class="brand-logo" src="./anopa-logo.png" alt="Anopa Nsroroma" />
-          <span class="brand-text">NOPA NSROROMA RECRUITMENT LTD</span>
-        </div>
-        <p class="muted">Recruitment Agency Limited</p>
-        <p class="muted">Sefwi Juaboso, Western North Region, Ghana</p>
-      </div>
-
-      <div class="footer-cols">
-        <div>
-          <h3>Services</h3>
-          <a href="#sectors">Staffing Solutions</a>
-          <a href="#sectors">Executive Search</a>
-          <a href="#sectors">Career Counseling</a>
-          <a href="#sectors">International Opportunities</a>
-        </div>
-        <div>
-          <h3>Company</h3>
-          <a href="#about">About Us</a>
-          <a href="#mission">Our Mission</a>
-          <a href="#contact">Contact</a>
-          <a href="#contact">Locations</a>
-        </div>
-        <div>
-          <h3>Contact</h3>
-          <a href="mailto:anopansroromaagencyltd6@gmail.com">Email Us</a>
-          <a href="tel:+2330544051414">Call Us</a>
-          <a href="#contact">Visit Office</a>
-          <a href="#contact">Get Directions</a>
-        </div>
-        <div>
-
       </div>
     </div>
+  </section>
 
-    <div class="container footer-bottom">
-      <p class="muted">© <span id="year"></span> Anopa Nsroroma Recruitment Agency Limited. All rights reserved.</p>
+  <!-- About Section -->
+  <section id="about" class="about-section">
+    <div class="section about fade-in">
+      <div class="about-content">
+        <div class="highlight">Our Mission</div>
+        <h2>Connecting Talent, Empowering Careers</h2>
+        <p>Anopa Nsroroma Recruitment Agency Limited is a leading recruitment agency based in Juaboso, Western
+          North region of Ghana. We specialize in connecting talented individuals with top companies in
+          various industries.</p>
+        <p>To address the evolving needs of employers and job seekers by delivering reliable recruitment support
+          and connecting the right talent with the right opportunities.</p>
+
+        <div class="about-features">
+          <div class="feature-item">
+            <div class="feature-icon">✔️</div>
+            <div class="feature-text">Connecting Talent</div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon">✔️</div>
+            <div class="feature-text">Empowering Careers</div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon">✔️</div>
+            <div class="feature-text">Reliable Support</div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon">✔️</div>
+            <div class="feature-text">Right Opportunities</div>
+          </div>
+        </div>
+
+        <p>Our dedicated team ensures a seamless and efficient recruitment process for both employers and job
+          seekers, with a personalized approach that focuses on the right fit.</p>
+      </div>
+      <div class="about-visual">
+        <div class="about-image">
+          <div class="visual-shapes">
+            <div class="visual-shape"></div>
+            <div class="visual-shape"></div>
+            <div class="visual-shape"></div>
+          </div>
+          <img src="images/image1.png" alt="About Anopa Nsroroma">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team Section -->
+  <section id="team" class="team">
+    <div class="section">
+      <h2 class="section-title fade-in">Our Team</h2>
+      <div class="team-grid">
+        <!-- Team Member 1 -->
+        <div class="team-member fade-in">
+          <div class="member-card">
+            <div class="member-avatar">
+              <img src="images/team-member-01.png" alt="Team Member">
+            </div>
+            <div class="member-info">
+              <h3>Recruitment Expert</h3>
+              <div class="member-role">Senior Consultant</div>
+              <p>Specializing in executive search and talent acquisition for top-tier organizations.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Team Member 2 -->
+        <div class="team-member fade-in">
+          <div class="member-card">
+            <div class="member-avatar">
+              <img src="images/team-member-02.png" alt="Team Member">
+            </div>
+            <div class="member-info">
+              <h3>Career Coach</h3>
+              <div class="member-role">Development Specialist</div>
+              <p>Guiding candidates through career transitions and professional growth opportunities.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Team Member 3 -->
+        <div class="team-member fade-in">
+          <div class="member-card">
+            <div class="member-avatar">
+              <img src="images/team-member-03.png" alt="Team Member">
+            </div>
+            <div class="member-info">
+              <h3>Global Liaison</h3>
+              <div class="member-role">International Relations</div>
+              <p>Connecting talent with international opportunities and managing visa processes.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sectors / Services List Section -->
+  <section id="sectors" class="about-section">
+    <div class="section about fade-in">
+      <!-- Content Left -->
+      <div class="about-content">
+        <h2>Our Recruitment Services</h2>
+        <ul class="service-features" style="list-style: none; padding: 0;">
+          <li style="margin-bottom: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);"><span
+              class="feature-check">✓</span> Staffing Solutions (Permanent, Temporary & Contract)</li>
+          <li style="margin-bottom: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);"><span
+              class="feature-check">✓</span> Executive Search & Talent Management</li>
+          <li style="margin-bottom: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);"><span
+              class="feature-check">✓</span> Career Counseling & Resume Services</li>
+          <li style="margin-bottom: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);"><span
+              class="feature-check">✓</span> Interview Preparation & Training</li>
+          <li style="margin-bottom: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);"><span
+              class="feature-check">✓</span> International Opportunities (Education & Work Abroad)</li>
+          <li style="margin-bottom: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);"><span
+              class="feature-check">✓</span> Job Market Analysis & HR Consulting</li>
+          <li style="margin-bottom: 10px; border-bottom: none;"><span class="feature-check">✓</span>
+            Recruitment Process Outsourcing</li>
+        </ul>
+      </div>
+      <!-- Visual Right -->
+      <div class="about-visual">
+        <div class="about-image">
+          <img src="images/image3.jpeg" alt="Recruitment Services" style="border-radius: 20px;">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="testimonials">
+    <div class="section">
+      <h2 class="section-title fade-in">Client Testimonial</h2>
+      <div class="testimonials-container">
+        <div class="testimonial fade-in">
+          <div class="testimonial-content">
+            <p class="testimonial-text">"I have been consistently impressed with the professionalism and
+              efficiency of Anopa Nsroroma Recruitment Agency. They truly go above and beyond to find the
+              perfect candidates for our company."</p>
+            <div class="testimonial-author">
+              <div class="author-info">
+                <h4>Mary Mitchell</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="section">
+      <h2 class="section-title fade-in">Get in Touch</h2>
+      <div class="contact-content">
+        <p>Connect with us for your recruitment needs.</p>
+
+        <div
+          style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; margin-top: 40px; text-align: center;">
+
+          <div
+            style="background: rgba(255,255,255,0.1); padding: 2rem; border-radius: 20px; backdrop-filter: blur(10px);">
+            <h3 style="font-size: 1.2rem; margin-bottom: 1rem;">Location</h3>
+            <p style="font-size: 1rem; margin: 0;">Sefwi Juaboso, Western North Region, Ghana</p>
+          </div>
+
+          <div
+            style="background: rgba(255,255,255,0.1); padding: 2rem; border-radius: 20px; backdrop-filter: blur(10px);">
+            <h3 style="font-size: 1.2rem; margin-bottom: 1rem;">Phone</h3>
+            <p style="font-size: 1rem; margin: 0.5rem 0;"><a href="tel:+2330544051414" style="color: inherit;">+233
+                (0)544051414</a></p>
+            <p style="font-size: 1rem; margin: 0.5rem 0;"><a href="tel:+2330505968408" style="color: inherit;">+233
+                (0)505968408</a></p>
+            <p style="font-size: 1rem; margin: 0.5rem 0;"><a href="tel:+2330249190429" style="color: inherit;">+233
+                (0)249190429</a></p>
+            <p style="font-size: 1rem; margin: 0.5rem 0;"><a href="tel:+393512909637" style="color: inherit;">+39 351
+                290 9637</a></p>
+          </div>
+
+          <div
+            style="background: rgba(255,255,255,0.1); padding: 2rem; border-radius: 20px; backdrop-filter: blur(10px);">
+            <h3 style="font-size: 1.2rem; margin-bottom: 1rem;">Email</h3>
+            <p style="font-size: 1rem; margin: 0.5rem 0;"><a href="mailto:anopansroromaagencyltd6@gmail.com"
+                style="color: inherit; word-break: break-all;">anopansroromaagencyltd6@gmail.com</a></p>
+            <p style="font-size: 1rem; margin: 0.5rem 0;"><a href="mailto:anopansroromarecruitmentagency@gmail.com"
+                style="color: inherit; word-break: break-all;">anopansroromarecruitmentagency@gmail.com</a>
+            </p>
+          </div>
+
+          <div
+            style="background: rgba(255,255,255,0.1); padding: 2rem; border-radius: 20px; backdrop-filter: blur(10px);">
+            <h3 style="font-size: 1.2rem; margin-bottom: 1rem;">Social Media</h3>
+            <p style="font-size: 1rem; margin: 0.5rem 0;"><strong>TikTok:</strong> @anopa.nsroroma</p>
+            <p style="font-size: 1rem; margin: 0.5rem 0;"><strong>Facebook:</strong> Anopa Nsroroma</p>
+            <p style="font-size: 1rem; margin: 0.5rem 0;"><strong>Instagram:</strong> Anopa Nsroroma</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-links" style="flex-direction: column; align-items: flex-start; gap: 0.5rem;">
+        <div class="brand-row" style="display: flex; align-items: center; margin-bottom: 10px;">
+          <img class="brand-logo" src="images/anopa-logo.png" alt="Anopa Nsroroma"
+            style="height: 40px; margin-right: 15px;" />
+          <span class="brand-text" style="color: white; font-weight: bold;">ANOPA NSROROMA RECRUITMENT AGENCY LTD</span>
+        </div>
+        <p style="color: #888; margin: 0;">Recruitment Agency Limited</p>
+        <p style="color: #888; margin: 0;">Sefwi Juaboso, Western North Region, Ghana</p>
+      </div>
+      <div class="footer-copyright">
+        © <span id="year"></span> Anopa Nsroroma Recruitment Agency Limited. All rights reserved.
+      </div>
     </div>
   </footer>
-
+  <script src="anopa-scripts.js"></script>
   <script>
-    document.getElementById('year').textContent = String(new Date().getFullYear());
+    document.getElementById('year').textContent = new Date().getFullYear();
   </script>
-
-  <!-- Vercel Web Analytics -->
-  <script>
-    window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
-  </script>
-  <script defer src="/_vercel/insights/script.js"></script>
 </body>
+
 </html>
